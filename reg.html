@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="en">
+   <head>
+        <meta charset="utf-8">
+        <title>EA | Register</title>
+        <link rel="stylesheet" href="../css/style1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .container2{
+    background: linear-gradient(-45deg, rgb(70, 173, 214), rgb(97, 34, 126), rgb(142, 88, 212), #2f0438,rgb(0, 0, 0));
+    background-size: 400% 400%;
+    animation: gradient 10s ease-in infinite;
+                 display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                /* z-index: 1; */
+
+            }
+            @keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.btn{
+    display: flex;
+    margin-top: 10px;
+}
+#btn:hover{
+    border: 1.5px solid rgb(228, 231, 10);
+}
+ #btn{
+  font: bold 17px Arial;
+  text-decoration: none;
+  background:linear-gradient(185deg, #30CFD0 0%, #330867 100%);
+  color: #fff;
+  padding: 2px 6px 2px 6px;
+  border-radius: 10px;
+  display: inline;
+}
+            .container2_box{
+                width: 400px;
+                height: 280px;
+                margin: 30px;
+                box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+                background: rgba(255, 255, 255, 0.1);
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-top: 1px solid rgba(255, 255, 255, 0.5);
+                border-left: 1px solid rgba(255, 255, 255, 0.4);
+                border-radius: 15px;
+                backdrop-filter: blur(5px);
+            }
+            .container2_box td input{
+                border-radius: 20px;
+                text-align: center;
+            }
+            .container2_box td input:hover{
+                border: 2px solid rgba(134, 21, 209, 0.541);
+            }
+
+        </style>
+   </head>
+   <body onload="myFunc()">
+     <div id = "loading">
+
+     </div>
+    <nav class="navbar">
+        <div class="brand-title"><a href="index.html" style="text-decoration: none;"><h2>E Arts</h2>
+          <h2>E Arts</h2></div></a>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="ranjit7858.github.io/index.html/#feedback">Feedback</a></li>
+            <li><a href="reg.html">Register</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- content  -->
+      <div class="container2">
+          <div class = "container2_box">
+      <form name="registered" method="post"><input type="hidden" name="form-name" value="registered">
+        <div class="register">
+       <table class="table" style="position: static;" align="center">
+        <tbody><tr>
+          <td>First name:</td>
+          <td><input type="text" id="name" name="first_name"></td>
+        </tr>
+        <tr>
+          <td>Last name:</td>
+          <td><input type="text" id="name" name="last_name"></td>
+        </tr>
+        <tr>
+          <td>Phone no:</td>
+          <td><input type="tel" id="name" name="phone"></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td><input type="email" id="name" name="email"></td>
+        </tr>
+        <tr>
+          <td>DOB:</td>
+          <td><input type="date" id="name" name="DOB" placeholder="dd-mm-yyyy"></td>
+        </tr>
+        <tr>
+          <td>Address:</td>
+          <td><input type="text" id="name"></td>
+        </tr>
+        <tr>
+          <td>Gender:</td>
+          <td><input type="radio" id="name" name="Gender" value="male">Male<input type="radio" id="name" name="Gender" value="female">Female<input type="radio" id="name" name="Gender" value="other">Other</td>
+        </tr>
+        </tbody></table>
+        <div class = "btn">
+            <a href="submission2.html" id ="btn">         
+                Register
+            </a>
+        </div>
+      </div>
+    </form>
+    </div>
+</div>
+      <!-- content  -->
+      <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class="widget_content">
+                        <p style="text-align: center; padding: 0px;"><strong> Our Social Media Handles</strong></p>
+                        <p style="text-align: center;">
+                            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.Twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.Instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.Youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.Pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
+                        </p>
+                        <ul class="contact-details-alt" style="padding-left: 30px;">
+                          <li id = "add" style="margin-top: -50px; padding: 5px;"><i class="fa fa-map-marker"></i> <p style="padding: 5px;"><strong>Address: sector-39,New Delhi,pin- 110011</strong></p></li>
+                          <li style="padding:5px;"><i class="fa fa-user" ></i> <p style="padding: 5px;"><strong>Phone:(+91) 1100100101</strong></p></li>
+                          <li style = "padding:5px"><i class="fa fa-envelope"></i> <p style="padding: 5px;"><strong>Email</strong>: <a href="https://www.gmail.com" target="_blank"><strong>EA@gmail.com</strong></a></p></li>
+                        </ul>
+                        <ol style="list-style: none;">
+                          <li style = "padding:5px"><p style="padding: 5px; text-align:center;"><a href="https://www.ISTEBITS.com" target="_blank" id = "footer"><strong>Sponsored by ISTEBITS</strong></a></p></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </footer>
+
+      <script type="text/javascript" src = "../js/load.js"></script>
+      <script type="text/javascript" src = "../js/nav.js"></script>
+   </body>
+</html>

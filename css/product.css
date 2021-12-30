@@ -1,0 +1,251 @@
+/* navbar  */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  background: linear-gradient(-45deg, #561172 0%, #a755ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #46329e 62%, #0e2b7c 75%, #371379 87%, #412f83 100%);
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #171C24;
+  color: white;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  margin: .5rem;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar-links li:hover {
+  background-color: rgb(192, 92, 34);
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .toggle-button {
+      display: flex;
+  }
+
+  .navbar-links {
+      display: none;
+      width: 100%;
+  }
+
+  .navbar-links ul {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .navbar-links ul li {
+      text-align: center;
+  }
+
+  .navbar-links ul li a {
+      padding: .5rem 1rem;
+  }
+
+  .navbar-links.active {
+      display: flex;
+  }
+}
+
+/* logo  */
+.brand-title h2:nth-child(1){
+	text-transform: uppercase;
+	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.brand-title h2:nth-child(2){
+  text-transform: uppercase;
+  margin-top: -44px;
+  color:#03a9f4 ;
+  animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate {
+  0% ,100%
+  {
+      clip-path: polygon(1% 51%, 16% 41%, 33% 37%, 50% 43%, 58% 59%, 71% 68%, 85% 69%, 93% 61%, 99% 52%, 100% 98%, 1% 100%);
+  }
+  50%{
+      clip-path: polygon(0 58%, 15% 68%, 34% 73%, 48% 68%, 58% 59%, 71% 47%, 81% 40%, 90% 43%, 100% 49%, 100% 98%, 1% 100%);
+  }
+  
+}
+
+/* content */
+.testimonials{
+    padding: 40px 0;
+    text-align: center;
+  }
+ .testimonials .inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+  
+ .testimonials .border{
+    width: 160px;
+    height: 5px;
+    background: #62a744;
+    margin: 26px auto;
+  }
+  
+  .testimonials .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+ .testimonials .col{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    position: relative;
+    width: 350px;
+    margin: 40px 10px;
+    padding: 30px 20px;
+    border-radius: 50px;
+    transition: 0.3s ease;
+    background-color: white;
+  }
+  .testimonial{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 30px;
+  }
+  .testimonial img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+  .stars{
+    color: #235cd6;
+    margin-bottom: 20px;
+  }
+  .testimonial a{
+    align-items: flex-end;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  
+  @media screen and (max-width:960px) {
+  .col{
+    flex: 100%;
+    max-width: 80%;
+    
+
+  }
+  }
+  
+  @media screen and (max-width:600px) {
+  .col{
+    flex: 100%;
+    max-width: 100%;
+  }
+  }
+/* footer  */
+.footer{
+    background:#171C24;
+    padding: 30px 0;
+    position: relative;
+    color: #fff;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+.footer a:hover{
+    color: teal;
+    transition: ease-in 300ms;
+}
+@media (max-width:980px){
+  .footer ul li p{
+    font-size: 13px;
+  }
+  .footer ul{
+    margin-top: 50px;
+    padding-left: 40px;
+  }
+}
+@media (max-width:450px) {
+  .footer ul li p{
+    font-size: 10px;
+  }
+  .footer ul{
+    margin-top: 20px;
+    padding: 20px;
+  }
+}
+
+/* loading  */
+#loading{
+  width: 100%;
+  height: 100vh;
+  background:#fff url("../image/Walk.gif") no-repeat center;
+  z-index: 99999;
+}
